@@ -1,12 +1,12 @@
 <?php
-
 error_reporting(0);
 include('includes/config.php');
 if(strlen($_SESSION['alogin'])==0)
 	{	
 header('location:index.php');
 }
-else{
+else{the remote end hung up unexpectedly
+
 if(isset($_POST['submit']))
 {
 $pname=$_POST['packagename'];
