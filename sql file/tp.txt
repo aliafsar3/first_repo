@@ -1,0 +1,54 @@
+CREATE TABLE `userstbl` (
+  `id` int(11) NOT NULL,
+  `FullName` varchar(100) DEFAULT NULL,
+  `MobileNumber` char(10) DEFAULT NULL,
+  `EmailId` varchar(70) DEFAULT NULL,
+  `Password` varchar(100) DEFAULT NULL,
+  `RegDate` timestamp NULL DEFAULT current_timestamp(),
+  `UpdationDate` timestamp NULL DEFAULT NULL ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `admin` (
+  `id` int(11) NOT NULL,
+  `UserName` varchar(100) DEFAULT NULL,
+  `Password` varchar(100) DEFAULT NULL,
+  `updationDate` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE items (
+id int(11) NOT NULL AUTO_INCREMENT,
+name varchar(255) NOT NULL,
+price int(11) NOT NULL, 
+PRIMARY KEY(id)
+);
+
+
+
+
+
+
+CREATE TABLE users items(
+id int(11) NOT NULL AUTO
+
+_INCREMENT,
+user_id int(11) NOT NULL, item_id int(11) NOT NULL
+
+(
+
+INCREMENT.
+
+status enum('Added to cart, 'Confirmed') NOT NULL PRIMARY KEY (id).
+
+
+CREATE TABLE `tourpackagestbl` (
+  `PackageId` int(11) NOT NULL,
+  `PackageName` varchar(200) DEFAULT NULL,
+  `PackageType` varchar(150) DEFAULT NULL,
+  `PackageLocation` varchar(100) DEFAULT NULL,
+  `PackagePrice` int(11) DEFAULT NULL,
+  `PackageFetures` varchar(255) DEFAULT NULL,
+  `PackageDetails` mediumtext DEFAULT NULL,
+  `PackageImage` varchar(100) DEFAULT NULL,
+  `Creationdate` timestamp NULL DEFAULT current_timestamp(),
+  `UpdationDate` timestamp NULL DEFAULT NULL ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
